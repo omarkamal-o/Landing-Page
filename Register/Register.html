@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Register.css">
+    <link rel="shortcut icon" href="../img/mobile.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    
+    <!-- Start Navbar -->
+    <header>
+        <div class= "nav-bar">
+            <div>
+                <h1><i class="fa-solid fa-laptop-code"></i> Frontend Developer</h1>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./Register.html">Register</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- End Navbar -->
+
+     <!-- Start Main -->
+     <main>
+        <div class="main-content">
+            <form class="register-form" action="../Submit/Submit.html" method="get">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="name@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" class="form-control" placeholder="Enter your password" required>
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="date" id="birthdate" name="birthdate" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="file">Upload File</label>
+                    <input type="file" id="file" name="file" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Skills</label>
+                    <div class="skills-options">
+                        <label><input type="checkbox" name="skills" value="html"> HTML</label>
+                        <label><input type="checkbox" name="skills" value="css"> CSS</label>
+                        <label><input type="checkbox" name="skills" value="js"> JavaScript</label>
+                        <label><input type="checkbox" name="skills" value="react"> React</label>
+                        <label><input type="checkbox" name="skills" value="other"> Other</label>
+                    </div>
+                </div>
+                <button type="submit" class="submit-btn" href="../Submit/Submit.html">Register</button>
+            </form>
+        </div>
+     </main>
+</body>
+</html>
